@@ -13,7 +13,7 @@
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 - [ ] Not bug related code refactor
 
-## Checklisk
+## Checklist
 <!-- You must check --> 
 - [ ]  Ensure the code follows the project's coding standards
     - [ ]  Choose descriptive and unambiguous names.
