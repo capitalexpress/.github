@@ -1,0 +1,63 @@
+name: "NEW FEATURE REQUEST"
+description: Create a new ticket for a new feature request.
+title: "🚀 [FEATURE] - <title>"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "User Story"
+      description: Please add a user story to describe the feature request
+      placeholder: As a [type of user], I want [a feature] so that [benefit]...
+    validations:
+      required: true
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Feature Description"
+      description: Please enter an explicit description of your issue
+      value: |
+        add a feature to ...
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots"
+      description: If applicable, add screenshots to help explain your problem.
+      value: |
+        ![DESCRIPTION](LINK.png)
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: Please add acceptance criteria for this feature request
+      placeholder: |
+        - [ ] Should be able to ...
+        - [ ] Shouldn't be able to ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Additional Notes"
+      description: Add any additional notes or context about the feature request
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: What is the priority of this feature request ?
+      multiple: false
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: false
