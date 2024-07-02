@@ -12,7 +12,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: reprod
+    id: feature_description
     attributes:
       label: "Feature Description"
       description: Please enter an explicit description of your issue
