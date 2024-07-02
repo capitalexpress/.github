@@ -66,9 +66,8 @@ body:
     attributes:
       label: "Expected Behavior"
       description: Please enter an explicit description of your issue
-      value: |
+      placeholder: |
         A clear and concise description of what you expected to happen.
-      render: bash
     validations:
       required: true
   - type: textarea
@@ -76,9 +75,8 @@ body:
     attributes:
       label: "Actual Behavior"
       description: Please enter an explicit description of your issue
-      value: |
+      placeholder: |
         A clear and concise description of what actually happened.
-      render: bash
     validations:
       required: true
   - type: textarea
