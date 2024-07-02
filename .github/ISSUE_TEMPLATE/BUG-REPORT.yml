@@ -35,6 +35,8 @@ body:
         - Windows
         - Linux
         - Mac
+        - iOS
+        - Android
     validations:
       required: false
   - type: dropdown
@@ -46,7 +48,7 @@ body:
       options:
         - Development
         - Stage
-        - Test
+        - QA
         - Production
   - type: dropdown
     id: test_type
@@ -109,3 +111,21 @@ body:
       render: bash
     validations:
       required: false
+  - type: textarea
+    id: version
+    attributes:
+      label: "Version"
+      description: What version of the software are you testing ?
+      render: bash
+  - type: textarea
+    id: module
+    attributes:
+      label: "Module"
+      description: What module is the bug related to ?
+      render: bash
+  - type: textarea
+    id: test_data
+    attributes:
+      label: "Test Data"
+      description: Please provide any test data that was used in the test.
+      render: bash
