@@ -117,11 +117,10 @@ body:
       label: "Version"
       description: What version of the software are you testing ?
   - type: textarea
-    id: module
+    id: input
     attributes:
       label: "Module"
       description: What module is the bug related to ?
-      render: bash
   - type: textarea
     id: test_data
     attributes:
