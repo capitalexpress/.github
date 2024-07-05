@@ -54,8 +54,8 @@ body:
   - type: markdown
     attributes:
       value: |
-       "<details>
-       <summary>Click me</summary>"
+       <details>
+       <summary>Click me</summary>
   - type: dropdown
     id: browsers
     attributes:
@@ -134,4 +134,5 @@ body:
       render: bash
   - type: markdown
     attributes:
-      value: "</details>"
+      value: |
+        </details>
