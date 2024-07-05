@@ -3,6 +3,11 @@ description: Create a new ticket for a bug.
 title: "🐛 [BUG] - <title>"
 labels: ["bug"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐛 Bug Report
+        Please provide a clear and concise description of what the bug is.
   - type: textarea
     id: description
     attributes:
