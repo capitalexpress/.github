@@ -118,6 +118,9 @@ body:
     attributes:
       label: "Logs"
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      placeholder: |
+        [2021-01-01 12:00:00] [ERROR] Something went wrong
+        [2021-01-01 12:00:01] [INFO] Something went right
       render: bash
     validations:
       required: false
