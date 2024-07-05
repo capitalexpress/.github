@@ -136,9 +136,7 @@ body:
       label: "Module"
       description: What module is the bug related to ?
       placeholder: |
-        Authentication
-        Authorization
-        User Management
+        Authentication, User Management, Invoice
   - type: textarea
     id: test_data
     attributes:
