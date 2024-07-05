@@ -116,7 +116,6 @@ body:
     attributes:
       label: "Version"
       description: What version of the software are you testing ?
-      render: bash
   - type: textarea
     id: module
     attributes:
