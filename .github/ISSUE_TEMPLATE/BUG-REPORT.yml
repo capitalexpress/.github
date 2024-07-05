@@ -129,14 +129,24 @@ body:
     attributes:
       label: "Version"
       description: What version of the software are you testing ?
+      placeholder: 1.0.0
   - type: input
     id: module
     attributes:
       label: "Module"
       description: What module is the bug related to ?
+      placeholder: |
+        Authentication
+        Authorization
+        User Management
   - type: textarea
     id: test_data
     attributes:
       label: "Test Data"
       description: Please provide any test data that was used in the test.
+      placeholder: |
+        {
+          "username": "test",
+          "password": "test"
+        }
       render: bash
