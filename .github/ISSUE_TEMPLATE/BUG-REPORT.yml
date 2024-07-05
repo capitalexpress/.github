@@ -51,6 +51,9 @@ body:
         ![DESCRIPTION](LINK.png)
     validations:
       required: false
+  - type: markdown
+  attributes:
+    value: "<details><summary>Click me</summary>"
   - type: dropdown
     id: browsers
     attributes:
@@ -127,3 +130,6 @@ body:
       label: "Test Data"
       description: Please provide any test data that was used in the test.
       render: bash
+  - type: markdown
+    attributes:
+      value: "</details>"
