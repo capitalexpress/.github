@@ -53,7 +53,9 @@ body:
       required: false
   - type: markdown
     attributes:
-      value: "<details><summary>Click me</summary>"
+      value: |
+       "<details>
+       summary>Click me</summary>"
   - type: dropdown
     id: browsers
     attributes:
