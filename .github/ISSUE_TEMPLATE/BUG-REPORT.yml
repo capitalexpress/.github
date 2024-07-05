@@ -116,18 +116,16 @@ body:
       render: bash
     validations:
       required: false
-  - type: textarea
+  - type: input
     id: version
     attributes:
       label: "Version"
       description: What version of the software are you testing ?
-      render: bash
-  - type: textarea
+  - type: input
     id: module
     attributes:
       label: "Module"
       description: What module is the bug related to ?
-      render: bash
   - type: textarea
     id: test_data
     attributes:
