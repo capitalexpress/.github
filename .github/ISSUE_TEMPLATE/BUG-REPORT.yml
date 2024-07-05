@@ -47,6 +47,11 @@ body:
       render: bash
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Additional Information
+        Please provide any additional information that may help us diagnose the issue.
   - type: textarea
     id: screenshot
     attributes:
