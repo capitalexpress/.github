@@ -55,83 +55,83 @@ body:
     attributes:
       value: |
        "<details>
-       summary>Click me</summary>"
-    - type: dropdown
-      id: browsers
-      attributes:
-        label: "Browsers"
-        description: What browsers are you seeing the problem on ?
-        multiple: true
-        options:
-          - Firefox
-          - Chrome
-          - Safari
-          - Microsoft Edge
-          - Opera
-      validations:
-        required: false
-    - type: dropdown
-      id: os
-      attributes:
-        label: "OS"
-        description: What is the impacted environment ?
-        multiple: true
-        options:
-          - Windows
-          - Linux
-          - Mac
-          - iOS
-          - Android
-      validations:
-        required: false
-    - type: dropdown
-      id: environment
-      attributes:
-        label: "Environment"
-        description: What is the impacted environment ?
-        multiple: false
-        options:
-          - Development
-          - Stage
-          - QA
-          - Production
-    - type: dropdown
-      id: test_type
-      attributes:
-        label: "Test Type"
-        description: What type of test is this ?
-        multiple: false
-        options:
-          - Unit
-          - Integration
-          - End-to-End
-          - Functional
-          - Performance
-          - Security
-    - type: textarea
-      id: logs
-      attributes:
-        label: "Logs"
-        description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-        render: bash
-      validations:
-        required: false
-    - type: input
-      id: version
-      attributes:
-        label: "Version"
-        description: What version of the software are you testing ?
-    - type: input
-      id: module
-      attributes:
-        label: "Module"
-        description: What module is the bug related to ?
-    - type: textarea
-      id: test_data
-      attributes:
-        label: "Test Data"
-        description: Please provide any test data that was used in the test.
-        render: bash
+       <summary>Click me</summary>"
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: "Browsers"
+      description: What browsers are you seeing the problem on ?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Opera
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: "OS"
+      description: What is the impacted environment ?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - Mac
+        - iOS
+        - Android
+    validations:
+      required: false
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Environment"
+      description: What is the impacted environment ?
+      multiple: false
+      options:
+        - Development
+        - Stage
+        - QA
+        - Production
+  - type: dropdown
+    id: test_type
+    attributes:
+      label: "Test Type"
+      description: What type of test is this ?
+      multiple: false
+      options:
+        - Unit
+        - Integration
+        - End-to-End
+        - Functional
+        - Performance
+        - Security
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: bash
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: "Version"
+      description: What version of the software are you testing ?
+  - type: input
+    id: module
+    attributes:
+      label: "Module"
+      description: What module is the bug related to ?
+  - type: textarea
+    id: test_data
+    attributes:
+      label: "Test Data"
+      description: Please provide any test data that was used in the test.
+      render: bash
   - type: markdown
     attributes:
       value: "</details>"
