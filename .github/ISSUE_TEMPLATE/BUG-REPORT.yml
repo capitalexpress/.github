@@ -113,6 +113,7 @@ body:
         - Functional
         - Performance
         - Security
+        - Exploratory
   - type: textarea
     id: logs
     attributes:
