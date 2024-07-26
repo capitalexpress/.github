@@ -1,12 +1,12 @@
-name: "🐛🐝🐞 Bug Report"
-description: Create a new ticket for a bug.
-title: "🐛🐝🐞 [BUG] - <title>"
-labels: ["bug"]
+name: "🔧 Enhancement request"
+description: Create a new ticket for an enhancement.
+title: "🔧 [ENH] - <title>"
+labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        ## 🐛🐝🐞 Bug Report
+        ## 🔧 Enhancement request
         Please provide a clear and concise description of what the bug is.
   - type: textarea
     id: description
@@ -61,91 +61,26 @@ body:
         ![DESCRIPTION](LINK.png)
     validations:
       required: false
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: "Browsers"
-      description: What browsers are you seeing the problem on ?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-        - Opera
-    validations:
-      required: false
-  - type: dropdown
-    id: os
-    attributes:
-      label: "OS"
-      description: What is the impacted environment ?
-      multiple: true
-      options:
-        - Windows
-        - Linux
-        - Mac
-        - iOS
-        - Android
-    validations:
-      required: false
-  - type: dropdown
-    id: environment
-    attributes:
-      label: "Environment"
-      description: What is the impacted environment ?
-      multiple: false
-      options:
-        - Development
-        - Stage
-        - QA
-        - Production
-  - type: dropdown
-    id: test_type
-    attributes:
-      label: "Test Type"
-      description: What type of test is this ?
-      multiple: false
-      options:
-        - Unit
-        - Integration
-        - End-to-End
-        - Functional
-        - Performance
-        - Security
-        - Exploratory
-  - type: textarea
-    id: logs
-    attributes:
-      label: "Logs"
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      placeholder: |
-        [2021-01-01 12:00:00] [ERROR] Something went wrong
-        [2021-01-01 12:00:01] [INFO] Something went right
-      render: bash
-    validations:
-      required: false
   - type: input
     id: version
     attributes:
       label: "Version"
       description: What version of the software are you testing ?
       placeholder: 1.0.0
-  - type: textarea
+  - type: input
     id: module
     attributes:
       label: "Module"
       description: What module is the bug related to ?
       placeholder: |
         Authentication, User Management, Invoice
-  - type: textarea
-    id: test_data
+  - type: dropdown
+    id: devices
     attributes:
-      label: "Test Data"
-      description: Please provide any test data that was used in the test.
-      placeholder: |
-        {
-          "username": "test",
-          "password": "test"
-        }
-      render: bash
+      label: "Devices"
+      description: What devices are you seeing the problem on ?
+      multiple: true
+      options:
+        - "Desktop"
+        - "Mobile"
+        - "Tablet"
