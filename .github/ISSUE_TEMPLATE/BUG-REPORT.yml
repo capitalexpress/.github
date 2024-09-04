@@ -94,7 +94,7 @@ body:
     attributes:
       label: "Environment"
       description: What is the impacted environment ?
-      multiple: false
+      multiple: true
       options:
         - Development
         - Stage
