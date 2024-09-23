@@ -67,7 +67,7 @@ body:
       label: "Version"
       description: What version of the software are you testing ?
       placeholder: 1.0.0
-  - type: input
+  - type: textarea
     id: module
     attributes:
       label: "Module"
