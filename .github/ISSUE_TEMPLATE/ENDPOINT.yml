@@ -15,7 +15,27 @@ body:
     id: feature_description
     attributes:
       label: "Feature Description"
-      description: Please enter an explicit description of your issue
+      description: Please enter an explicit description of your issue.
+      value: |
+        add a feature to ...
+      render: bash
+    validations:
+      required: true
+    - type: textarea
+    id: requested_input
+    attributes:
+      label: "Requested Input"
+      description: Please enter an explicit detail of the requested input.
+      value: |
+        add a feature to ...
+      render: bash
+    validations:
+      required: true
+      - type: textarea
+    id: expected_output
+    attributes:
+      label: "Expected Output"
+      description: Please enter an explicit json structure of the requested output.
       value: |
         add a feature to ...
       render: bash
@@ -51,17 +71,5 @@ body:
     attributes:
       label: "Additional Notes"
       description: Add any additional notes or context about the feature request
-    validations:
-      required: false
-  - type: dropdown
-    id: priority
-    attributes:
-      label: "Priority"
-      description: What is the priority of this feature request ?
-      multiple: false
-      options:
-        - Low
-        - Medium
-        - High
     validations:
       required: false
