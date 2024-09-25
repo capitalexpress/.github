@@ -1,7 +1,7 @@
 name: "🚀 New Feature Request"
 description: Create a new ticket for a new feature request.
 title: "🚀 [FEATURE] - <title>"
-labels: ["enhancement"]
+labels: ["new-feature"]
 body:
   - type: textarea
     id: description
