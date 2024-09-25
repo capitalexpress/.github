@@ -27,7 +27,12 @@ body:
       label: "Screenshots"
       description: If applicable, add screenshots to help explain your problem.
       value: |
+        <details>
+        <summary>Images</summary>
+        
         ![DESCRIPTION](LINK.png)
+
+        </details>
     validations:
       required: false
   - type: textarea
