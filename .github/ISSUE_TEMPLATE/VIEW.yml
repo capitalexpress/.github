@@ -1,0 +1,65 @@
+name: "📱🖥️ New View Request"
+description: Create a new ticket for a new endpoint request.
+title: "📱🖥️ [VIEW] - <title>"
+labels: ["view","new-feature"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "User Story"
+      description: Please add a user story to describe the feature request
+      placeholder: As a [type of user], I want [a feature] so that [benefit]...
+    validations:
+      required: true
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: "Feature Description"
+      description: Please enter an explicit description of your issue.
+      value: |
+        add a feature to ...
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: expected_output
+    attributes:
+      label: "Expected Behaviour"
+      description: Please enter an explicit json structure of the expected behaviour.
+      value: |
+        add a feature to ...
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Screenshots"
+      description: If applicable, add screenshots to help explain your problem.
+      value: |
+        <details>
+        <summary>Images</summary>
+        
+        ![DESCRIPTION](LINK.png)
+
+        </details>
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: Please add acceptance criteria for this feature request
+      placeholder: |
+        - [ ] Should be able to ...
+        - [ ] Shouldn't be able to ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Additional Notes"
+      description: Add any additional notes or context about the feature request
+    validations:
+      required: false
