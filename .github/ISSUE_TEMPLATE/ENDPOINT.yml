@@ -1,7 +1,7 @@
-name: "⚙️ New Enpoint Request"
+name: "⚙️ New Endpoint Request"
 description: Create a new ticket for a new endpoint request.
 title: "⚙️ [ENDPOINT] - <title>"
-labels: ["enpoint"]
+labels: ["endpoint", "new-feature"]
 body:
   - type: textarea
     id: description
