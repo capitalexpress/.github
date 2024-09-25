@@ -21,26 +21,26 @@ body:
       render: bash
     validations:
       required: true
+  - type: textarea
+  id: requested_input
+  attributes:
+    label: "Requested Input"
+    description: Please enter an explicit detail of the requested input.
+    value: |
+      add a feature to ...
+    render: bash
+  validations:
+    required: true
     - type: textarea
-    id: requested_input
-    attributes:
-      label: "Requested Input"
-      description: Please enter an explicit detail of the requested input.
-      value: |
-        add a feature to ...
-      render: bash
-    validations:
-      required: true
-      - type: textarea
-    id: expected_output
-    attributes:
-      label: "Expected Output"
-      description: Please enter an explicit json structure of the requested output.
-      value: |
-        add a feature to ...
-      render: bash
-    validations:
-      required: true
+  id: expected_output
+  attributes:
+    label: "Expected Output"
+    description: Please enter an explicit json structure of the requested output.
+    value: |
+      add a feature to ...
+    render: bash
+  validations:
+    required: true
   - type: textarea
     id: screenshot
     attributes:
