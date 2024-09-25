@@ -53,15 +53,3 @@ body:
       description: Add any additional notes or context about the feature request
     validations:
       required: false
-  - type: dropdown
-    id: priority
-    attributes:
-      label: "Priority"
-      description: What is the priority of this feature request ?
-      multiple: false
-      options:
-        - Low
-        - Medium
-        - High
-    validations:
-      required: false
