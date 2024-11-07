@@ -35,3 +35,15 @@
 - [ ]  Do not include extensive refactoring if not requested
 - [ ]  Ensure all continuous integration checks are passed
 - [ ]  Provide proof of completion on issue or pull request
+
+
+## Checklist FrontEnd
+- [ ] Check all next components have ids
+  - [ ] Buttons
+  - [ ] Form elements
+  - [ ] Tables
+- Update project wiki
+  - New page
+  - Shared components
+  - Shared utils  
+
