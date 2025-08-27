@@ -1,7 +1,7 @@
 name: Go Build and Publish
 
 inputs:
-  IMAGEN_VERSION:
+  IMAGE_VERSION:
     description: "The version of the image to build"
     required: true
     type: string
@@ -41,28 +41,28 @@ runs:
       id: set-image-tags
       shell: bash
       run: |
-        echo "IMAGEN_VERSION_TAG=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGEN_VERSION }}-${{ env.IMAGEN_ENV }}" >> "$GITHUB_OUTPUT"
-        echo "IMAGEN_HASH_TAG=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGEN_HASH }}" >> "$GITHUB_OUTPUT"
+        echo "IMAGE_VERSION_TAG=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_VERSION }}-${{ env.IMAGE_ENV }}" >> "$GITHUB_OUTPUT"
+        echo "IMAGE_HASH_TAG=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}:${{ env.IMAGE_HASH }}" >> "$GITHUB_OUTPUT"
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: ${{ inputs.ECR_REPOSITORY }}
-        IMAGEN_VERSION: ${{ inputs.IMAGEN_VERSION }}
-        IMAGEN_HASH: ${{ github.sha }}
-        IMAGEN_ENV: ${{ inputs.ENV }}
+        IMAGE_VERSION: ${{ inputs.IMAGE_VERSION }}
+        IMAGE_HASH: ${{ github.sha }}
+        IMAGE_ENV: ${{ inputs.ENV }}
     - name: Build and push Docker image
       uses: docker/build-push-action@v6
       with:
         context: .
         push: true
         file: ./Dockerfile
-        #platforms: linux/amd64,linux/arm64
+        platforms: linux/amd64,linux/arm64
         tags: |
-          ${{ steps.set-image-tags.outputs.IMAGEN_VERSION_TAG }}
-          ${{ steps.set-image-tags.outputs.IMAGEN_HASH_TAG }}
+          ${{ steps.set-image-tags.outputs.IMAGE_VERSION_TAG }}
+          ${{ steps.set-image-tags.outputs.IMAGE_HASH_TAG }}
 outputs:
-  IMAGEN_VERSION_TAG:
+  IMAGE_VERSION_TAG:
     description: "Image tag with version"
-    value: ${{ steps.set-image-tags.outputs.IMAGEN_VERSION_TAG }}
-  IMAGEN_HASH_TAG:
+    value: ${{ steps.set-image-tags.outputs.IMAGE_VERSION_TAG }}
+  IMAGE_HASH_TAG:
     description: "Image tag with hash"
-    value: ${{ steps.set-image-tags.outputs.IMAGEN_HASH_TAG }}
+    value: ${{ steps.set-image-tags.outputs.IMAGE_HASH_TAG }}
