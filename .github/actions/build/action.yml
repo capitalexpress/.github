@@ -63,6 +63,7 @@ runs:
         echo "IMAGE_REPOSITORY=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}" >> "$GITHUB_OUTPUT"
         echo "IMAGE_VERSION_TAG=${{ env.IMAGE_VERSION }}-${{ env.IMAGE_ENV }}" >> "$GITHUB_OUTPUT"
         echo "IMAGE_HASH_TAG=${{ env.IMAGE_HASH }}" >> "$GITHUB_OUTPUT"
+        echo "IMAGE_REGISTRY=${{ env.ECR_REGISTRY }}" >> "$GITHUB_OUTPUT"
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: ${{ inputs.ECR_REPOSITORY }}
@@ -89,3 +90,6 @@ outputs:
   IMAGE_REPOSITORY:
     description: "ECR repository URI"
     value: ${{ steps.set-image-tags.outputs.IMAGE_REPOSITORY }}
+  IMAGE_REGISTRY:
+    description: "ECR registry URI"
+    value: ${{ steps.set-image-tags.outputs.IMAGE_REGISTRY }} 
