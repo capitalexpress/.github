@@ -60,9 +60,9 @@ runs:
       id: set-image-tags
       shell: bash
       run: |
-        echo "IMAGE_REPOSITORY=${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}" >> "$GITHUB_OUTPUT"
-        echo "IMAGE_VERSION_TAG=${{ env.IMAGE_VERSION }}-${{ env.IMAGE_ENV }}" >> "$GITHUB_OUTPUT"
-        echo "IMAGE_HASH_TAG=${{ env.IMAGE_HASH }}" >> "$GITHUB_OUTPUT"
+        echo "IMAGE_REPOSITORY='${{ env.ECR_REGISTRY }}/${{ env.ECR_REPOSITORY }}'" >> "$GITHUB_OUTPUT"
+        echo "IMAGE_VERSION_TAG='${{ env.IMAGE_VERSION }}-${{ env.IMAGE_ENV }}'" >> "$GITHUB_OUTPUT"
+        echo "IMAGE_HASH_TAG='${{ env.IMAGE_HASH }}'" >> "$GITHUB_OUTPUT"
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: ${{ inputs.ECR_REPOSITORY }}
@@ -82,10 +82,10 @@ runs:
 outputs:
   IMAGE_VERSION_TAG:
     description: "Image tag with version"
-    value: ${{ steps.set-image-tags.outputs.IMAGE_VERSION_TAG }}
+    value: '${{ steps.set-image-tags.outputs.IMAGE_VERSION_TAG }}'
   IMAGE_HASH_TAG:
     description: "Image tag with hash"
-    value: ${{ steps.set-image-tags.outputs.IMAGE_HASH_TAG }}
+    value: '${{ steps.set-image-tags.outputs.IMAGE_HASH_TAG }}'
   IMAGE_REPOSITORY:
     description: "ECR repository URI"
-    value: ${{ steps.set-image-tags.outputs.IMAGE_REPOSITORY }}
+    value: '${{ steps.set-image-tags.outputs.IMAGE_REPOSITORY }}'
