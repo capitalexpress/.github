@@ -1,6 +1,6 @@
 name: "Deploy Go Application"
 on:
- workflow_dispatch:
+ workflow_call:
     inputs:
       DOPPLER_TARGET_PROJECT:
         description: 'Doppler Target Project'
@@ -112,7 +112,7 @@ jobs:
         run: aws eks update-kubeconfig --name ${{ inputs.EKS_CLUSTER_NAME }} --region ${{ inputs.AWS_REGION }}
       - name: Config Helm chart
         run: |
-            helm upgrade ${{ inputs.APP_NAME }} ./kubernetes --install --namespace ${{ inputs.NAMESPACE }} \
+            helm upgrade ${{ inputs.APP_NAME }} ${{ github.action_path }}/kubernetes --install --namespace ${{ inputs.NAMESPACE }} \
              $HELM_ARGS \
              --set image.tag=${{ needs.build.outputs.IMAGE_HASH_TAG }} \
              --set image.repository='${{ needs.build.outputs.IMAGE_REGISTRY }}/${{secrets.ECR_REPOSITORY}}' \

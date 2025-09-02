@@ -76,7 +76,6 @@ runs:
         context: .
         push: true
         file: ./Dockerfile
-#       platforms: linux/amd64,linux/arm64
         tags: |
           "${{steps.set-image-tags.outputs.IMAGE_REPOSITORY}}:${{ steps.set-image-tags.outputs.IMAGE_VERSION_TAG }}"
           "${{steps.set-image-tags.outputs.IMAGE_REPOSITORY}}:${{ steps.set-image-tags.outputs.IMAGE_HASH_TAG }}"
