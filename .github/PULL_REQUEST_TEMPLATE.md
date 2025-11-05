@@ -35,6 +35,7 @@
 - [ ]  Do not include extensive refactoring if not requested
 - [ ]  Ensure all continuous integration checks are passed
 - [ ]  Provide proof of completion on issue or pull request
+- [ ]  Ensure new Environments or update are documented on notion
 
 
 ## Checklist FrontEnd
