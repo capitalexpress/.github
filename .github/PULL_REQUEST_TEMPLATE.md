@@ -9,6 +9,9 @@
 ## Shadow wing
 <!-- (Optional) Please provide the pull request link of the shadow-wing project, if applicable -->
 
+## 1Password Proof
+<!-- (Optional) Please provide the 1Password Vault Private Link as proof, if applicable -->
+
 ## Required Notion URLs
 <!--  (Optional) Please remove options that are not relevant. -->
 - [ ] ENV VARIABLES: <!-- Add Notion URL here -->
