@@ -46,7 +46,7 @@ body:
         4. See error
       render: bash
     validations:
-      required: true
+      required: false
   - type: markdown
     attributes:
       value: |
