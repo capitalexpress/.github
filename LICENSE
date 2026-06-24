@@ -1,21 +1,48 @@
-MIT License
+Copyright (c) 2026 CapitalExpress. Todos los derechos reservados.
 
-Copyright (c) 2024 CAPEX
+SOFTWARE PROPIETARIO Y CONFIDENCIAL
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Este software, incluyendo su código fuente, código objeto, documentación,
+diseños, archivos de configuración y cualquier material asociado (en
+conjunto, el "Software"), es propiedad exclusiva de CapitalExpress y
+constituye información confidencial y secretos comerciales de la empresa.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. PROPIEDAD
+   El Software está protegido por las leyes de derechos de autor y por
+   tratados internacionales. CapitalExpress se reserva la totalidad de los
+   derechos, títulos e intereses sobre el Software. No se concede ninguna
+   licencia ni derecho, expreso o implícito, salvo autorización expresa y
+   por escrito de CapitalExpress.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. RESTRICCIONES
+   Queda estrictamente prohibido, sin autorización previa y por escrito de
+   CapitalExpress:
+     (a) copiar, reproducir o distribuir el Software, total o parcialmente;
+     (b) modificar, adaptar, traducir o crear obras derivadas del Software;
+     (c) realizar ingeniería inversa, descompilar o desensamblar el Software,
+         salvo en la medida que la ley aplicable lo permita expresamente;
+     (d) sublicenciar, arrendar, vender, ceder o transferir el Software a
+         terceros;
+     (e) eliminar u ocultar avisos de propiedad, copyright o confidencialidad.
+
+3. USO AUTORIZADO
+   El acceso al Software se limita al personal de CapitalExpress y a las
+   partes expresamente autorizadas, únicamente para los fines internos de la
+   empresa. Cualquier uso fuera de dicho alcance requiere autorización
+   escrita.
+
+4. CONFIDENCIALIDAD
+   Quienes accedan al Software deben mantener su confidencialidad y proteger
+   la información de divulgación no autorizada.
+
+5. EXENCIÓN DE GARANTÍA
+   EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO,
+   EXPRESA O IMPLÍCITA, INCLUYENDO PERO SIN LIMITARSE A LAS GARANTÍAS DE
+   COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN.
+
+6. LIMITACIÓN DE RESPONSABILIDAD
+   EN NINGÚN CASO CAPITALEXPRESS SERÁ RESPONSABLE POR RECLAMACIONES, DAÑOS U
+   OTRAS RESPONSABILIDADES DERIVADAS DEL SOFTWARE O DE SU USO.
+
+Para solicitar autorizaciones o reportar usos no permitidos, contactar a
+CapitalExpress.
