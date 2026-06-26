@@ -1,48 +1,38 @@
 Copyright (c) 2026 CapitalExpress. Todos los derechos reservados.
 
-SOFTWARE PROPIETARIO Y CONFIDENCIAL
+SOFTWARE PROPIETARIO
 
-Este software, incluyendo su código fuente, código objeto, documentación,
-diseños, archivos de configuración y cualquier material asociado (en
-conjunto, el "Software"), es propiedad exclusiva de CapitalExpress y
-constituye información confidencial y secretos comerciales de la empresa.
+Este repositorio y su contenido —incluyendo plantillas, archivos de
+configuración, flujos de trabajo (workflows/actions) y documentación
+asociada (en conjunto, el "Material")— son propiedad exclusiva de
+CapitalExpress y están protegidos por las leyes de derechos de autor y por
+tratados internacionales.
 
 1. PROPIEDAD
-   El Software está protegido por las leyes de derechos de autor y por
-   tratados internacionales. CapitalExpress se reserva la totalidad de los
-   derechos, títulos e intereses sobre el Software. No se concede ninguna
-   licencia ni derecho, expreso o implícito, salvo autorización expresa y
-   por escrito de CapitalExpress.
+   CapitalExpress se reserva la totalidad de los derechos, títulos e
+   intereses sobre el Material. Aunque este repositorio es de acceso público
+   —con el fin de servir como plantillas por defecto y recursos compartidos
+   dentro de los proyectos de CapitalExpress— su publicación no concede
+   ninguna licencia ni derecho, expreso o implícito, sobre el Material, salvo
+   autorización expresa y por escrito de CapitalExpress.
 
 2. RESTRICCIONES
-   Queda estrictamente prohibido, sin autorización previa y por escrito de
-   CapitalExpress:
-     (a) copiar, reproducir o distribuir el Software, total o parcialmente;
-     (b) modificar, adaptar, traducir o crear obras derivadas del Software;
-     (c) realizar ingeniería inversa, descompilar o desensamblar el Software,
-         salvo en la medida que la ley aplicable lo permita expresamente;
-     (d) sublicenciar, arrendar, vender, ceder o transferir el Software a
+   Sin autorización previa y por escrito de CapitalExpress, queda prohibido:
+     (a) copiar, reproducir o redistribuir el Material, total o parcialmente,
+         fuera de los proyectos de CapitalExpress;
+     (b) modificar, adaptar, traducir o crear obras derivadas del Material
+         con fines de redistribución a terceros;
+     (c) sublicenciar, arrendar, vender, ceder o transferir el Material a
          terceros;
-     (e) eliminar u ocultar avisos de propiedad, copyright o confidencialidad.
+     (d) eliminar u ocultar los avisos de propiedad o de copyright.
 
-3. USO AUTORIZADO
-   El acceso al Software se limita al personal de CapitalExpress y a las
-   partes expresamente autorizadas, únicamente para los fines internos de la
-   empresa. Cualquier uso fuera de dicho alcance requiere autorización
-   escrita.
-
-4. CONFIDENCIALIDAD
-   Quienes accedan al Software deben mantener su confidencialidad y proteger
-   la información de divulgación no autorizada.
-
-5. EXENCIÓN DE GARANTÍA
-   EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO,
+3. EXENCIÓN DE GARANTÍA
+   EL MATERIAL SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO,
    EXPRESA O IMPLÍCITA, INCLUYENDO PERO SIN LIMITARSE A LAS GARANTÍAS DE
    COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN.
 
-6. LIMITACIÓN DE RESPONSABILIDAD
+4. LIMITACIÓN DE RESPONSABILIDAD
    EN NINGÚN CASO CAPITALEXPRESS SERÁ RESPONSABLE POR RECLAMACIONES, DAÑOS U
-   OTRAS RESPONSABILIDADES DERIVADAS DEL SOFTWARE O DE SU USO.
+   OTRAS RESPONSABILIDADES DERIVADAS DEL MATERIAL O DE SU USO.
 
-Para solicitar autorizaciones o reportar usos no permitidos, contactar a
-CapitalExpress.
+Para solicitar autorizaciones, contactar a CapitalExpress.
