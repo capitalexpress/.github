@@ -1,0 +1,78 @@
+name: User Story
+description: Una característica o requisito desde la perspectiva del usuario.
+title: '[FEATURE]: '
+labels: ['type: feature']
+body:
+  - type: input
+    id: notion_url
+    attributes:
+      label: URL de Notion
+      description: Enlace a la página de Notion que originó esta historia.
+      placeholder: https://www.notion.so/...
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Proporcione cualquier información de contexto, enlaces a diseños o información adicional que sea necesaria.
+    validations:
+      required: false
+  - type: textarea
+    id: story
+    attributes:
+      label: Historia
+      description: Defina el usuario, la acción y el valor.
+      value: |
+        **Como** [rol/usuario],
+        **Quiero** [acción/característica],
+        **Para** [valor/beneficio observable].
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Criterios de Aceptación
+      description: Enumera las condiciones que deben cumplirse para que esta historia se considere terminada.
+      value: |
+        ```gherkin
+        Feature: [funcionalidad]
+
+          Scenario: [caso particular]
+            Given [precondición]
+            When  [acción]
+            Then  [resultado observable]
+
+          Scenario: [caso borde o de error]
+            Given ...
+            When  ...
+            Then  ...
+        ```
+    validations:
+      required: true
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Información Adicional
+      description: Proporcione cualquier información adicional que pueda ser útil para el equipo de desarrollo.
+    validations:
+      required: false
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tareas
+      description: Lista de tareas a definir en Planning. Solo se definen sub-issues si el trabajo cruza una repo o una persona.
+      value: |
+        - [ ] Tarea 1
+        - [ ] Tarea 2
+  - type: checkboxes
+    id: dor
+    attributes:
+      label: DoR - Definition of Ready
+      options:
+        - label: Enlace Notion ↔ tarjeta en ambas direcciones
+        - label: La historia y sus criterios son claros para todo el equipo
+        - label: Criterios en formato Gherkin, con al menos un caso borde
+        - label: Dependencias identificadas
+        - label: Estimada por el equipo (Fibonacci 1–8; un 13 se divide)
+        - label: Cabe en un sprint

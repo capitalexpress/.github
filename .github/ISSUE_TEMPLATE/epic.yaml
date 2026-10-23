@@ -1,0 +1,60 @@
+name: Epic
+description: Resultado de negocio que agrupa varias HdU/tarjetas. No se estima ni entra a un sprint.
+title: '[EPIC]: '
+labels: ['type: epic']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No se estima — su avance es la suma de sus hijas, conectadas en Zenhub. **Done cuando todas sus hijas están Done.**
+        Los compromisos de negocio con fecha llevan además un Zenhub Release.
+  - type: input
+    id: notion_url
+    attributes:
+      label: URL de Notion
+      description: Contexto largo — discovery, roadmap, análisis. Opcional (un epic puede nacer antes del discovery formal).
+      placeholder: https://www.notion.so/...
+  - type: textarea
+    id: goal
+    attributes:
+      label: Objetivo
+      description: Outcome de negocio en una frase, no output de software. "Construir el módulo X" es el medio, no el fin.
+      placeholder: 'Ej: Los clientes se enteran solos del estado de sus operaciones, sin llamar a su ejecutivo.'
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Alcance
+      description: El "no incluye" es la mitad valiosa — sin él, el epic crece para siempre.
+      value: |
+        **Incluye:**
+        -
+
+        **No incluye:**
+        -
+    validations:
+      required: true
+  - type: textarea
+    id: user_stories
+    attributes:
+      label: Historias / Tarjetas Hijas
+      description: Referencia para quien lee el epic. La estructura real es la conexión padre-hija en Zenhub — si no se conecta allá, el epic aparece 0% para siempre.
+      placeholder: '- #'
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Métrica de Éxito
+      description: El número que cierra el ciclo. "100% de historias completadas" es el Done, no el éxito. Por ejemplo, llamadas de consulta de estado −80%.
+    validations:
+      required: true
+  - type: checkboxes
+    id: dor
+    attributes:
+      label: DoR - Definition of Ready
+      description: El Epic no se estima (su tamaño es la suma de sus hijas).
+      options:
+        - label: Objetivo de negocio (outcome) claramente definido
+        - label: Alcance acotado (incluye / no incluye)
+        - label: Al menos una tarjeta hija identificada
+        - label: Métrica de éxito definida

@@ -1,0 +1,55 @@
+# Issue labels for every capitalexpress repo — the source of truth.
+# Sync: scripts/sync-labels.sh (or the sync-labels workflow). Additive: it creates and
+# updates these labels, it never deletes others.
+#
+# Format (kept strict so the script needs no YAML parser): one "- name:" line per label,
+# then "color:" (hex, no #) and "description:", values in double quotes.
+
+- name: "type: epic"
+  color: "5319E7"
+  description: "Agrupa varias tarjetas hacia un resultado de negocio. No se estima (suma de sus sub-issues)."
+- name: "type: feature"
+  color: "0E8A16"
+  description: "Capacidad observable por el usuario. Se escribe con criterios de aceptación (Gherkin)."
+- name: "type: chore"
+  color: "6E7681"
+  description: "Trabajo técnico sin cambio visible: refactor, documentación, migración, tooling, deuda técnica."
+- name: "type: bug"
+  color: "D73A4A"
+  description: "Defecto respecto al comportamiento acordado."
+- name: "type: spike"
+  color: "FBCA04"
+  description: "Investigación acotada en el tiempo para responder una pregunta antes de estimar."
+
+- name: "priority: critical"
+  color: "B60205"
+  description: "Urgente: bloquea o rompe producción. Se toma de inmediato."
+- name: "priority: high"
+  color: "D93F0B"
+  description: "Importante para el sprint actual; se prioriza sobre el resto."
+- name: "priority: medium"
+  color: "FBCA04"
+  description: "Prioridad normal; se agenda en el flujo habitual."
+- name: "priority: low"
+  color: "C5DEF5"
+  description: "Deseable; se toma cuando hay capacidad."
+
+- name: "component: backend"
+  color: "1D76DB"
+  description: "Servicios, lógica de negocio y microservicios."
+- name: "component: frontend"
+  color: "0E7C7B"
+  description: "Interfaz de usuario y experiencia en el cliente."
+- name: "component: api"
+  color: "0052CC"
+  description: "Contratos de API, endpoints y gateway entre servicios."
+- name: "component: infra"
+  color: "795548"
+  description: "Infraestructura, despliegue, cloud (AWS) y on-prem."
+- name: "component: design"
+  color: "D876E3"
+  description: "Diseño de producto, UX/UI y prototipos."
+
+- name: "flag: interruption"
+  color: "E11D48"
+  description: "Trabajo no planificado que entra a mitad de sprint (escalación N3). Se revisa en la Retro."
