@@ -1,0 +1,76 @@
+name: Chore / Tarea Técnica
+description: Trabajo habilitante sin comportamiento visible para el usuario (refactor, documentación, migración, tooling).
+title: '[CHORE]: '
+labels: ['type: chore']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Declara el **resultado** directamente — nada de historias falsas ("como developer, quiero…").
+        Se estima Fibonacci 1–8 y compite por capacidad en el Planning. Puede ser tarjeta propia o
+        sub-issue de una HdU (los sub-issues no se estiman: los puntos viven en la HdU).
+  - type: dropdown
+    id: chore_type
+    attributes:
+      label: Tipo de Trabajo
+      description: ¿Qué clase de trabajo técnico es?
+      options:
+        - Refactor
+        - Documentación
+        - Migración
+        - Habilitador (endpoint, contrato, capacidad técnica)
+        - Integración (servicio externo / API de terceros)
+        - Tooling / Automatización
+        - Dependencias / Actualización
+        - Deuda técnica
+        - Configuración / Infra
+        - Otro
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Origen
+      description: HdU o discusión que la generó (trazabilidad de la regla de los 10 minutos). Link.
+      placeholder: '#123, o URL de Notion'
+  - type: textarea
+    id: result
+    attributes:
+      label: Resultado Esperado
+      description: Qué queda hecho, declarado directamente — no la actividad. "Mejorar el rendimiento" no sirve, ¿cuándo está Done?
+      placeholder: 'Ej: Estados de aprobación migrados de JSONB a tabla intermedia, con backfill completo y consultas indexadas.'
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Resultado Verificable (Done)
+      description: Sin comportamiento de usuario que demostrar, se demuestra evidencia técnica (tests, métricas, conteos). "Funciona bien" no es verificable.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: blocked
+    attributes:
+      label: Bloquea a
+      description: Tarjetas que dependen de esta. La conexión real se hace como blocker en Zenhub; esta lista es referencia. La HdU bloqueada se estima como si esto ya estuviera hecho.
+      placeholder: '- #[HdU u otra tarjeta]'
+  - type: textarea
+    id: risks
+    attributes:
+      label: Riesgos y Plan de Rollout
+      description: Si hay migración de datos, plan de rollback y ventana de mantención. Una migración sin rollback escrito no entra al sprint.
+  - type: checkboxes
+    id: dor
+    attributes:
+      label: DoR - Definition of Ready
+      description: Aplica a tarjetas propias. Las sub-issues de una HdU no se estiman (§5).
+      options:
+        - label: Resultado técnico verificable claramente definido
+        - label: Origen y motivación claros (qué habilita o desbloquea)
+        - label: Riesgos y rollout considerados (si hay migración, plan de rollback)
+        - label: Dependencias / tarjetas bloqueadas identificadas
+        - label: Estimada por el equipo (Fibonacci 1–8; un 13 se divide)
+        - label: Cabe en un sprint

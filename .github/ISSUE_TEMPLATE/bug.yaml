@@ -1,0 +1,72 @@
+name: Bug
+description: Comportamiento distinto al acordado. Directo a New Issues — sin draft en Notion.
+title: '[BUG]: '
+labels: ['type: bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Urgente de producción:** agrega además `flag: interruption` — se toma de inmediato, sin esperar Refinement.
+        Los bugs no urgentes se refinan y estiman como cualquier tarjeta.
+  - type: textarea
+    id: current_behaviour
+    attributes:
+      label: Comportamiento Actual
+      description: El comportamiento observado. "No funciona la pantalla" no sirve — describe qué se ve.
+    validations:
+      required: true
+  - type: textarea
+    id: expected_behaviour
+    attributes:
+      label: Comportamiento Esperado
+      description: El comportamiento acordado (no el deseado). Si existe la HdU original, enlaza el criterio. Si nunca se acordó, no es un bug — el PO escribe una HdU.
+    validations:
+      required: true
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Pasos para reproducir
+      description: Pasos desde un estado conocido (usuario, datos, pantalla). "A veces falla" obliga a reconstruir este campo.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Gravedad
+      description: Severidad del defecto (la prioridad se define aparte con el label `priority:`).
+      options:
+        - Bloqueante (no se puede continuar)
+        - Crítico (interrumpe el flujo de trabajo)
+        - Mayor (afecta la funcionalidad principal)
+        - Menor (afecta la funcionalidad secundaria)
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impacto
+      description: A quién afecta, con qué frecuencia, desde cuándo. Define si es interrupción (se toma de inmediato) o entra al Refinement.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidencia
+      description: Logs, capturas (con URL y hora), `trace_id`, ids de operación. Ahorra la primera hora de debugging.
+    validations:
+      required: false
+  - type: checkboxes
+    id: dor
+    attributes:
+      label: DoR - Definition of Ready
+      options:
+        - label: Comportamiento observado y esperado claros
+        - label: Reproducible con pasos desde un estado conocido
+        - label: Impacto y gravedad definidos
+        - label: Evidencia adjunta si aplica (logs, capturas, trace_id)
+        - label: Estimada por el equipo (Fibonacci 1–8; un 13 se divide)
+        - label: Cabe en un sprint

@@ -1,0 +1,66 @@
+name: Spike
+description: Investigación con timebox — una pregunta concreta, un timebox, un dueño.
+title: '[SPIKE]: '
+labels: ['type: spike']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Nace de la **regla de los 10 minutos** en el Refinement. La HdU que lo originó se queda en
+        *Ready for Refinement* hasta que el spike responda. Se dimensiona por su timebox (no Fibonacci).
+        El desarrollo de la investigación vive en 💡 Discovery & Spikes (Notion).
+  - type: input
+    id: notion_url
+    attributes:
+      label: URL de Notion
+      description: Entrada espejo en 💡 Discovery & Spikes — ahí se desarrolla y concluye la investigación.
+      placeholder: https://www.notion.so/...
+    validations:
+      required: true
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo y contexto
+      description: Qué buscamos resolver y de dónde salió (HdU bloqueada, decisión pendiente — links).
+    validations:
+      required: true
+  - type: textarea
+    id: preguntas
+    attributes:
+      label: Preguntas a responder
+      description: Concretas y cerrables (¿se responde con sí/no/un plan?). "Investigar performance" no es un spike. Dos preguntas independientes = dos spikes.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Timebox
+      description: En días. Al vencer, se responde con lo que hay — aunque sea "necesitamos otro spike más acotado".
+      placeholder: 2 días
+    validations:
+      required: true
+  - type: textarea
+    id: entregable
+    attributes:
+      label: Entregable esperado
+      description: e.g., recomendación, documento de diseño técnico, diagrama, PR de prueba de concepto.
+  - type: checkboxes
+    id: spike_checklist
+    attributes:
+      label: ¿Es realmente un spike?
+      options:
+        - label: Existe una decisión específica que este spike permite tomar
+        - label: El resultado se puede enunciar como algo comprobable
+        - label: Cambiará cómo se estima o se define el alcance de una HdU o tarjeta técnica
+  - type: checkboxes
+    id: dor
+    attributes:
+      label: DoR - Definition of Ready
+      options:
+        - label: Pregunta(s) concreta(s) y cerrable(s)
+        - label: Timebox definido
+        - label: Entregable esperado claro
+        - label: Enlace Notion ↔ tarjeta en ambas direcciones
+        - label: Cabe en un sprint
